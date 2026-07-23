@@ -1,4 +1,4 @@
-name: Deploy Website
+name: Deploy React App
 
 on:
   push:
@@ -14,20 +14,21 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    environment:
-      name: github-pages
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/setup-node@v4
         with:
-          path: .
+          node-version: 20
 
-      - name: Deploy
-        uses: actions/deploy-pages@v4
+      - run: npm install
+
+      - run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
+
+      - uses: actions/deploy-pages@v4
