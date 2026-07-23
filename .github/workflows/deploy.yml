@@ -3,7 +3,7 @@ name: Deploy Website
 on:
   push:
     branches:
-      - maser
+      - master
 
 permissions:
   contents: read
