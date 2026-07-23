@@ -13,7 +13,7 @@ const Form: React.FC = () => {
   }
 
   // Insert here the secret keyword
-  const secretKeyword = 'test';
+  const secretKeyword = 'عمار';
 
   return (
     <div className="form-container">
