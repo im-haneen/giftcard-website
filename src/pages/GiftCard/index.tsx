@@ -22,10 +22,10 @@ const GiftCard: React.FC = () => {
   const [showConfetti, setShowConfetti] = React.useState(true);
 
   const [configs] = React.useState({
-    yourName: '*your name*',
-    fromEmoji: '*some emoji*',
-    nameOfTheSpecialPerson: '*name*',
-    toEmoji: '*another emoji*',
+    yourName: 'Amar',
+    fromEmoji: '⋆˚꩜｡',
+    nameOfTheSpecialPerson: 'Sultan',
+    toEmoji: '(˶ᵔ ᵕ ᵔ˶) ‹𝟹',
   });
 
   return (
@@ -79,8 +79,8 @@ const GiftCard: React.FC = () => {
 
         {/* Here are some playlist by your choice */}
         <iframe
-          title="HappyBirthday"
-          src="https://open.spotify.com/embed/playlist/3zEgcPGS5Ub7l7dfzkReUc"
+          title="51 Followers"
+          src="https://open.spotify.com/intl-ar/track/1JA2QrshH4N8q0HWUGKEEw"
           width="300"
           height="200"
           frameBorder="0"
