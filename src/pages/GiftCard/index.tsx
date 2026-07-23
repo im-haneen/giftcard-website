@@ -7,7 +7,7 @@ import './styles.css';
 
 const GiftCard: React.FC = () => {
   // Setting the title of the browser tab
-  document.title = 'Happy birdthday!!';
+  document.title = 'مبروكك ال 50!!';
 
   // Changing the icon of the browser tab
   React.useEffect(() => {
@@ -63,7 +63,7 @@ const GiftCard: React.FC = () => {
                   <span role="img" aria-label="emoji">
                     🎉
                   </span>{' '}
-                  Happy Birthday!,
+                  Congratulations for having 51 followers!,
                 </h1>
                 {/* Here you pull the name of the special person */}
                 <h1>
@@ -71,6 +71,7 @@ const GiftCard: React.FC = () => {
                   <span role="img" aria-label="emoji">
                     🎉
                   </span>
+                  so proud of u
                 </h1>
               </div>
             </div>
